@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/styleModalTeste.css">
+</head>
+<body>
+	<div id="main">
+	<form>
+		<h1>Calculadora de IMC</h1><br>
+		<label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label>Qual seu Sexo?</label>
+		<div id="radio">
+        <label for="masculino">Masculino</label>
+		<input type="radio" name="sexo" value="masc" checked>
+        <label for="feminino">Feminino</label>
+		<input type="radio" name="sexo" value="fem">
+		</div>	
+		<label for="dataNasc2">Selecione uma data de nascimento:</label>	
+		<div id="dataNasc3">
+        <input type="date" name="dataNasc" id="dataNasc">
+		</div>
+		<label for="peso">Peso:</label>
+		<input type="number" id="peso" name="peso" required>
+		<label for="altura">Altura:</label>
+		<input type="number" id="altura" name="altura" required>
+		<button type="button" onclick="calcularIMC()">Calcular IMC</button><br>
+        <input type="reset" name="reset" id="reset" value="Limpar">
+        <a href="curriculum.html"><input type="button" name="voltar" id="voltar" value="Voltar"></a>
+	</form>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<img id="imgResultado" src="">
+			<p id="textoResultado"></p>
+		</div>
+	</div>
+</div>
+    <script src="js/modalTeste.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: grey;
+}
+#form{
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.inputs {
+    outline: none;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 3px;
+    padding: 2.5px;
+    transition: 250ms;
+}
+.inputs:hover{
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.cal{
+
+    background-color: rgb(196, 196, 196) ;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    padding: 10vh;
+}

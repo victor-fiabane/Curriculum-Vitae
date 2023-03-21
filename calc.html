@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCalc.css">
+
+    <title>Calcula ai</title>
+</head>
+<body>
+    <div class="cal">
+        <div id="title">
+    <h1>Calculadora Base</h1>
+        </div>
+    <form name="f1" id="form">
+    <input type="text" name="val1">
+    <input class="inputs" type="button" value="c"
+    onclick="this.form.val1.valu='';
+    this.form.val2.value=''">
+    <input class="inputs" type="button" value="cos(x)"
+    onclick="cos()">
+    <input class="inputs" type="button" value="sin(x)"
+    onclick="sin()">
+    <input class="inputs" type="button" value="tan(x)"
+    onclick="tan()">
+    <input class="inputs" type="button" value="sqrt(x)"
+    onclick="sqrt()">
+    <input class="inputs" type="button" value="ln(x)"
+    onclick="log()">
+    <input class="inputs" type="button" value="exp(x)"
+    onclick="exp()">
+    <input type="text" name="val2">
+    </form>
+    </div>
+    <script src="js/calc.js"></script>
+</body>
+</html>

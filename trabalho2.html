@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/trabalho2.css">
+    <title>Folha de Pagamento</title>
+</head>
+<body>
+    <div id="main">
+        <div id="central">
+            <div id="esquerda">
+            <h3 class="titulo">Insira os dados</h3></legend>
+        
+            <input type="text" id="nome" class="entrada"  placeholder="Nome completo">
+           
+            <input  type="number" id="horas" class="entrada" placeholder="N horas trabalhadas">
+          
+            <input  type="number" id="valorHora" class="entrada" placeholder="Valor hora">
+            
+            <input  type="number" id="numeroFilhos" class="entrada" placeholder="Nº de filhos">
+            
+            <button id="btn_gerar_folha" onclick="calcular()">Gerar folha</button>
+
+        </div>        
+        <div id="direita">
+                <legend><h3 class="titulo">Folha de pagamento</h3></legend>
+            <label for="salario">Salário</label>
+            <input type="text" id="salario" value="" class="saida" placeholder="Salario bruto">
+           
+            <label for="descontoInss">Desconto Inss</label>
+            <input type="number" id="descontoInss"  value="" class="saida" placeholder="Desconto do INSS">
+          
+            <label for="descontoIr">Desconto Ir</label>
+            <input type="number" id="descontoIr" value="" class="saida" placeholder="Desconto de IR">
+     
+            <label for="salarioFamilia">Salário Familia</label>
+            <input type="number" id="salarioFamilia" value="" class="saida" placeholder="Salario Familia">   
+           
+            <label for="salarioLiquido">Salário liquido</label>
+            <input type="number" id="salarioLiquido" value="" class="saida" placeholder="Salario liquido">
+        </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
